@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<mapper namespace="com.rwb.mapper.IBookMapper">
+
+    <select id="selectByPrimaryKey" resultType="com.rwb.entity.Book">
+        SELECT
+            book_id, name, number
+        FROM
+            book
+        WHERE
+            book_id = ?
+    </select>
+
+    <select id="selectAll" resultType="com.rwb.entity.Book">
+        SELECT
+            book_id, name, number
+        FROM
+            book
+    </select>
+
+</mapper>
